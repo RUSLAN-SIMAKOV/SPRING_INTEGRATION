@@ -25,7 +25,7 @@ public class TerminatorService {
     }
 
     @ServiceActivator(inputChannel = "charged")
-    public void notificationReady(Terminator terminator) {
+    public void notificationReady() {
         log.info("Terminator ready");
     }
 }
